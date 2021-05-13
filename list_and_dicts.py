@@ -1,3 +1,4 @@
+'''
 def run():
     my_list = [1, "Hello", True, 4.5]
     my_dict = {"firstname":"Facundo", "lastname":"García"}
@@ -23,3 +24,7 @@ def run():
 
 if __name__ == '__main__':
     run()
+'''
+my_dict = {"firstname":"Facundo", "lastname":"García"}
+print(my_dict["firstname"],my_dict["lastname"]) #En efecto, se invocan los keys y los values con el nombre del diccionario, corchetes y los items
+
