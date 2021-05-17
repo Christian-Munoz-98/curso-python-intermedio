@@ -11,7 +11,7 @@ odd = list(filter(lambda x: x%2 != 0, my_list))
 print(odd)
 '''
 #Función "Map"
-
+'''
 #Elevando una lista al cuadrado con list comprehension
 my_list = [1,2,3,4,5]
 squares = [i**2 for i in my_list ]
@@ -21,3 +21,14 @@ print(squares)
 my_list = [1,2,3,4,5]
 squares = list(map(lambda x: x**2, my_list))
 print(squares)
+'''
+#Función "Reduce"
+
+#Multiplicar elementos de una lista con for
+my_list = [2,2,2,2,2]
+all_multiplied = 1
+
+for i in my_list:
+    all_multiplied *= i
+
+print(all_multiplied)
