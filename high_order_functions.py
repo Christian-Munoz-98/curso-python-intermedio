@@ -14,5 +14,7 @@ print(odd)
 
 #Elevando una lista al cuadrado con list comprehension
 my_list = [1,2,3,4,5]
-odd_comprehension = [i**2 for i in my_list ]
-print(odd_comprehension)
+squares = [i**2 for i in my_list ]
+print(squares)
+
+#Uso con Map
