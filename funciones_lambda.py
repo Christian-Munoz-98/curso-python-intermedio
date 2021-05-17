@@ -7,7 +7,7 @@ def run():
         print(f"{palabra} es un palíndromo")
     else:
         print(f"{palabra} no es un palíndromo")
-        
+
 
 
 if __name__ == '__main__':
