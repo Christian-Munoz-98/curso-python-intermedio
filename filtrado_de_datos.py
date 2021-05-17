@@ -71,7 +71,7 @@ DATA = [
     },
 ]
 
-
+'''
 def run():
     all_python_devs =[worker['name'] for worker in DATA if worker['language'] == 'python']
     all_platzi_workers = [worker['name'] for worker in DATA if worker['organization'] == 'Platzi']
@@ -79,6 +79,23 @@ def run():
     adults = list(map(lambda worker: worker['name'], adults))
     old_people = list(map(lambda worker: worker | {'old': worker['age'] > 70}, DATA))
     
+
+    for worker in old_people:
+        print(worker)
+
+if __name__ == '__main__':
+    run()
+'''
+#Reto
+#Crear las listas all_python_devs y all_Platzi_Workers usando combinación de filter y map.
+#Crear la lista old_people y adulst con list comprehensions.
+def run():
+    all_python_devs = list(filter(lambda worker: worker['language'] == 'python', DATA))
+    all_python_devs = list(map(lambda worker: worker['name'], all_python_devs))
+    all_Platzi_workers = list(filter(lambda worker: worker['organization'] == 'Platzi', DATA))
+    all_Platzi_workers= list(map(lambda worker: worker['name'], all_Platzi_workers))
+    adults = [worker['name'] for worker in DATA if worker['age'] > 18 ]
+    old_people = [worker | {'old': worker['age'] > 70} for worker in DATA ]
 
     for worker in old_people:
         print(worker)
