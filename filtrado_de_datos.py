@@ -75,5 +75,8 @@ DATA = [
 def run():
     all_python_devs =[worker['name'] for worker in DATA if worker['language'] == 'python']
 
+    for worker in all_python_devs:
+        print(worker)
+
 if __name__ == '__main__':
     run()
