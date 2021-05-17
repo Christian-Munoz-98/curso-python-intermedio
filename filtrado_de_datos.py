@@ -97,6 +97,16 @@ def run():
     adults = [worker['name'] for worker in DATA if worker['age'] > 18 ]
     old_people = [worker | {'old': worker['age'] > 70} for worker in DATA ]
 
+    print('\nDesarolladores de python:')
+    for worker in all_python_devs:
+        print(worker)
+    print('\nTrabajadores de Platzi:')
+    for worker in all_Platzi_workers:
+        print(worker)
+    print('\nPersonas Adultas:')
+    for worker in adults:
+        print(worker)
+    print('\nDiccionario nuevo de adultos mayores:')
     for worker in old_people:
         print(worker)
 
