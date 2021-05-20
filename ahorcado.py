@@ -7,7 +7,6 @@ def lista_palabras():
     return palabras
 
 def run():
-    print("Bienvenido al juego del ahorcado")
     palabra = random.choice(lista_palabras())
     palabra_secreta = "_" * len(palabra)
     palabra_secreta_control = list("_" * len(palabra))
