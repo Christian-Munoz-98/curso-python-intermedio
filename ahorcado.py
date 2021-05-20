@@ -1,14 +1,14 @@
 import random 
 import os
 
-def lista_palanbras():
+def lista_palabras():
     with open("./archivos/data.txt", "r", encoding="utf-8") as f:
         palabras = [line.strip() for line in f]
     return palabras
 
 def run():
     print("Bienvenido al juego del ahorcado")
-    palabra = random.choice(lista_palanbras())
+    palabra = random.choice(lista_palabras())
     palabra_secreta = "_" * len(palabra)
     palabra_secreta_control = list("_" * len(palabra))
     
