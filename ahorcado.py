@@ -1,9 +1,3 @@
-#Incorpora manejo de errores
-#Investiga la funcion "enumerate"
-#anade un sistema de puntos
-#Dibuja al "ahorcado" en cada jugada con codigo ascii
-#mejora la interfaz
-
 import random 
 import os
 
