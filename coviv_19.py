@@ -43,9 +43,11 @@ def run():
     
         opc = int(input("---------->"))
 
-        print(estados[opc-1]["Estado"], " Registró ", estados[opc-1]["Casos"], " Hasta el 19 de mayo")
+        print(estados[opc-1]["Estado"], " Registró ", estados[opc-1]["Casos"], " casos de covid-19 hasta el 19 de mayo")
     except IndexError:
         print("Ingrese una opción válida")
+        return opc
+
 
 
 if __name__ == "__main__":
