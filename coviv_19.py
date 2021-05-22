@@ -1,5 +1,6 @@
 def run():
-    estados = [
+    try:
+        estados = [
         {"Estado":"Aguascalientes","Casos":3000},
         {"Estado":"Baja California","Casos":1500},
         {"Estado":"Baja California Sur","Casos":12000},
@@ -32,23 +33,19 @@ def run():
         {"Estado":"Veracruz","Casos":56760},
         {"Estado":"Yucatán","Casos":45656},
         {"Estado":"Zacatecas","Casos":45766}
-    ]
-    num=0
-    selcción = ("Seleccione una opción:")
+        ]
+        num=0
+        selcción = ("Seleccione una opción:")
     
-    for item in estados:
-        num += 1
-        print(num ,"-", item["Estado"] )
+        for item in estados:
+            num += 1
+            print(num ,"-", item["Estado"] )
     
-    opc = int(input("---------->"))
+        opc = int(input("---------->"))
 
-    print(estados[opc-1]["Estado"], " Registró ", estados[opc-1]["Casos"], " Hasta el 19 de mayo")
-
-    try:
-        opc < 1 or opc > 32
+        print(estados[opc-1]["Estado"], " Registró ", estados[opc-1]["Casos"], " Hasta el 19 de mayo")
     except IndexError:
         print("Ingrese una opción válida")
-        return opc
 
 
 if __name__ == "__main__":
